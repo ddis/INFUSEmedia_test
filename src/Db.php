@@ -21,6 +21,9 @@ class Db
         return self::$instance->getPDO();
     }
 
+    /**
+     * Db constructor.
+     */
     private function __construct()
     {
         $this->pdo = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASS);
@@ -35,7 +38,13 @@ class Db
         return $this->pdo;
     }
 
+    /**
+     * Db _clone
+     */
     private function __clone() { }
 
+    /**
+     * Db _wakeup
+     */
     private function __wakeup() { }
 }
