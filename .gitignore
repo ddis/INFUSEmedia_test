@@ -1,0 +1,9 @@
+#phpStorm
+.idea
+
+#Composer
+vendor
+
+#config
+config.php
+
